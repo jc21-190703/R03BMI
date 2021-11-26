@@ -63,7 +63,7 @@ namespace R03BMI
 
             double BMI = taizyu2 / sintyou2 * sintyou2;
             double BMI2 = Math.Round(BMI);
-            result.Text=BMI2;
+            result.Text=BMI2.toString();
 
         }
 
