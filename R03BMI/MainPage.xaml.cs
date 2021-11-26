@@ -51,22 +51,7 @@ namespace R03BMI
             double s = double.Parse(sintyou);
             string taizyu = weighit.Placeholder;
             double t = double.Parse(taizyu);
-            //double sintyou2;
-           // double taizyu2;
-
-
-      //  string[] zyoutai = new string[2];
-           // zyoutai[0] = "(痩せすぎ)";
-           // zyoutai[1] = "(痩せ)";
-           // BMI[2] = "()";
-           // taikan[3] = "(何も感じない)";
-           // taikan[4] = "(快適)";
-           // taikan[5] = "(不快感を持つ人が出始める)";
-           // taikan[6] = "(半数以上が不快に感じる)";
-           // taikan[7] = "(全員が不快に感じる)";
-            //taikan[8] = "(暑くてたまらない)";
-
-            //double shisu;  
+           
             if(s > 100)
             {
                 sintyou2 = s / 100;
