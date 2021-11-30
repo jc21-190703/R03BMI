@@ -66,7 +66,7 @@ namespace R03BMI
 
             //result.Text=BMI2.ToString();
 string BMI3=BMI2.ToString();
-result.Text=BMI3;
+result.Text＝BMI3；
             //result.Text=BMI2;
         }
 
