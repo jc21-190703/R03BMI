@@ -51,24 +51,33 @@ namespace R03BMI
             double s = double.Parse(sintyou);
             string taizyu = weighit.Placeholder;
             double t = double.Parse(taizyu);
-           
-            if(s > 100)
-            {
-                sintyou2 = s / 100;
-            }
-            if(t > 1000)
-            {
-                taizyu2 =t / 1000;
-            }
 
-            double BMI = taizyu2 / sintyou2 * sintyou2;
-            //double BMI2 = Math.Round(BMI);
-            int BMI2 = (int)BMI;
-            double BMI3 = (double)BMI2;
-            //result.Text=BMI2.ToString();
-            string BMI4=BMI3.ToString();
-            result.Text = BMI4;
-            //result.Text=BMI2;
+            try
+            {
+                if (s > 100)
+                {
+                    sintyou2 = s / 100;
+                }
+                if (t > 1000)
+                {
+                    taizyu2 = t / 1000;
+                }
+
+                double BMI = taizyu2 / sintyou2 * sintyou2;
+
+                int BMI2 = (int)BMI;
+                double BMI3 = (double)BMI2;
+                //result.Text=BMI2.ToString();
+                string BMI4 = BMI3.ToString();
+                result.Text = BMI4;
+                //result.Text=BMI2;
+            }
+            catch(FormatException ex)
+            {
+                result.Text = ex.Message;
+            }
+           
+            
         }
 
     }
