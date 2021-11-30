@@ -65,8 +65,8 @@ namespace R03BMI
             double BMI2 = Math.Round(BMI);
 
             //result.Text=BMI2.ToString();
-string BMI3=BMI2.ToString();
-result.Text＝BMI3；
+            string BMI3=BMI2.ToString();
+            result.Text = BMI3;
             //result.Text=BMI2;
         }
 
