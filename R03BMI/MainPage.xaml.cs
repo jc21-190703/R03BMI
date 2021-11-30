@@ -72,7 +72,7 @@ namespace R03BMI
                 result.Text = BMI4;
                 //result.Text=BMI2;
             }
-            catch(FormatException ex)
+            catch(InvalidCastException ex)
             {
                 result.Text = ex.Message;
             }
