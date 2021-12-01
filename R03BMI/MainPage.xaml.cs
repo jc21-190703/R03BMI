@@ -69,11 +69,11 @@ namespace R03BMI
                 // MessageBox.show("3");
                 double BMI = taizyu2 / (sintyou2 * sintyou2);
                 double BMI2 = Math.Round(BMI);
-                string BMI3 = BMI2.ToString();
+                //string BMI3 = BMI2.ToString(string);
                 
                
-                result.Text = BMI3;
-                Console.WriteLine(BMI3);
+                result.Text = BMI2;
+                Console.WriteLine(BMI2);
                 
                 //result.Text=BMI2.ToString();
                 
