@@ -99,7 +99,7 @@ namespace R03BMI
                     status = "肥満 (4度)";
                 }
 
-                result.Text = "BMI値は"+BMI2+"状態は"+status+"です。";
+                result.Text = "BMI値は"+BMI2+"、状態は"+status+"です。";
               
 
 
