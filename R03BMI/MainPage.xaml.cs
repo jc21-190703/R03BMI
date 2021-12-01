@@ -47,16 +47,16 @@ namespace R03BMI
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            MessageBox.show("1");
-            
+            //MessageBox.show("1");
+            try
+            { 
             string sintyou = heighit.Placeholder;
             double s = double.Parse(sintyou);
             string taizyu = weighit.Placeholder;
             double t = double.Parse(taizyu);
             
-            try
-            {
-            MessageBox.show("2");
+           
+           // MessageBox.show("2");
 
                 if (s > 100)
                 {
@@ -66,7 +66,7 @@ namespace R03BMI
                 {
                     taizyu2 = t / 1000;
                 }
-                 MessageBox.show("3");
+                // MessageBox.show("3");
                 double BMI = taizyu2 / (sintyou2 * sintyou2);
                 double BMI2 = Math.Round(BMI);
                 string BMI3 = BMI2.ToString();
@@ -79,11 +79,11 @@ namespace R03BMI
                 
                
                 //result.Text=BMI2;
-                 MessageBox.show("4");
+                // MessageBox.show("4");
             }
             catch(FormatException ex)
             {
-                MessageBox.show("5");
+                //MessageBox.show("5");
                 result.Text ="a";
                 Console.WriteLine(ex);
                 
