@@ -47,7 +47,7 @@ namespace R03BMI
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            MessageBox.show("1");
+            //MessageBox.show("1");
             
             string sintyou = heighit.Placeholder;
             double s = double.Parse(sintyou);
@@ -56,7 +56,7 @@ namespace R03BMI
             
             try
             {
-            MessageBox.show("2");
+           // MessageBox.show("2");
 
                 if (s > 100)
                 {
@@ -66,27 +66,29 @@ namespace R03BMI
                 {
                     taizyu2 = t / 1000;
                 }
-                 MessageBox.show("3");
-                double BMI = taizyu2 / sintyou2 * sintyou2
-                int BMI2 = (int)BMI;
-                double BMI3 = (double)BMI2;
+                // MessageBox.show("3");
+                double BMI = taizyu2 / sintyou2 * sintyou2;
+                double BMI2 = Math.Round(BMI);
+                string BMI3 = BMI2.ToString();
+                Console.WriteLine(BMI3);
+                result.Text = BMI3;
                 //result.Text=BMI2.ToString();
-                string BMI4 = BMI3.ToString();
-                result.Text = BMI4;
+                
+               
                 //result.Text=BMI2;
-                 MessageBox.show("4");
+                // MessageBox.show("4");
             }
-            catch(InvalidCastException ex)
+            catch(FormatException ex)
             {
-                MessageBox.show("5");
-                result.Text = ex.Message;
+                //MessageBox.show("5");
+                Console.WriteLine(ex);
+                result.Text ="1";
             }
-            finally
-            {
-                  MessageBox.show("6");
-            }
+            
             
         }
 
     }
 }
+//int BMI2 = (int)BMI;
+//double BMI3 = (double)BMI2;
