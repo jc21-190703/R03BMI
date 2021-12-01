@@ -10,9 +10,8 @@ namespace R03BMI
 {
     public partial class MainPage : ContentPage
     {
-        //private double sintyou2;
-        double sintyou2;
-        double taizyu2;
+        //double h;
+        //double taizyu2;
 
         public MainPage()
         {
@@ -47,27 +46,26 @@ namespace R03BMI
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            //MessageBox.show("1");
-            try
-            { 
-            string sintyou = heighit.Placeholder;
-            double s = double.Parse(sintyou);
-            string taizyu = weighit.Placeholder;
-            double t = double.Parse(taizyu);
-            
            
-           // MessageBox.show("2");
+            try
+            {
+                string height = heighit.Text;
+                string weight = weighit.Text;
 
-                if (s > 100)
+                double height2 = double.Parse(height);
+                double weight2 = double.Parse(weight);
+                   
+      
+                if (height2 >= 10)
                 {
-                    sintyou2 = s / 100;
+                    height2 = height2 / 100;
                 }
-                if (t > 1000)
+                if (weight2 >= 1000)
                 {
-                    taizyu2 = t / 1000;
+                    weight2 = weight2 / 1000;
                 }
-                // MessageBox.show("3");
-                double BMI = taizyu2 / (sintyou2 * sintyou2);
+                
+                double BMI = weight2 / (height2 * height2);
                 double BMI2 = Math.Round(BMI);
                 //string BMI3 = BMI2.ToString();
                 
@@ -79,11 +77,11 @@ namespace R03BMI
                 
                
                 //result.Text=BMI2;
-                // MessageBox.show("4");
+              
             }
             catch(FormatException ex)
             {
-                //MessageBox.show("5");
+                
                 result.Text =ex.Message;
                 Console.WriteLine(ex.Message);
                 
@@ -94,5 +92,3 @@ namespace R03BMI
 
     }
 }
-//int BMI2 = (int)BMI;
-//double BMI3 = (double)BMI2;
