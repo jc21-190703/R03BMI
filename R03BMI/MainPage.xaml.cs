@@ -84,8 +84,8 @@ namespace R03BMI
             catch(FormatException ex)
             {
                 //MessageBox.show("5");
-                result.Text ="a";
-                Console.WriteLine(ex);
+                result.Text =ex.Message;
+                Console.WriteLine(ex.Message);
                 
             }
             
