@@ -66,7 +66,7 @@ namespace R03BMI
                 }
                 
                 double BMI = weight2 / (height2 * height2);
-                double BMI2 = Math.Round(BMI);
+                double BMI2 = Math.Round(BMI,1);
                 //string BMI3 = BMI2.ToString();
                 
                
