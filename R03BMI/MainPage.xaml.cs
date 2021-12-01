@@ -67,10 +67,12 @@ namespace R03BMI
                     taizyu2 = t / 1000;
                 }
                 // MessageBox.show("3");
-                double BMI = taizyu2 / sintyou2 * sintyou2;
+                double BMI = taizyu2 / (sintyou2 * sintyou2);
                 double BMI2 = Math.Round(BMI);
                 string BMI3 = BMI2.ToString();
-                Console.WriteLine(BMI3);
+                
+               
+                Debug.WriteLine(BMI3);
                 result.Text = BMI3;
                 //result.Text=BMI2.ToString();
                 
@@ -81,7 +83,7 @@ namespace R03BMI
             catch(FormatException ex)
             {
                 //MessageBox.show("5");
-                Console.WriteLine(ex);
+                Debug.WriteLine(ex);
                 result.Text ="1";
             }
             
