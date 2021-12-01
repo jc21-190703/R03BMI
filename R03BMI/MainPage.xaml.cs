@@ -72,8 +72,9 @@ namespace R03BMI
                 string BMI3 = BMI2.ToString();
                 
                
-                Debug.WriteLine(BMI3);
                 result.Text = BMI3;
+                Console.WriteLine(BMI3);
+                
                 //result.Text=BMI2.ToString();
                 
                
@@ -83,8 +84,9 @@ namespace R03BMI
             catch(FormatException ex)
             {
                 //MessageBox.show("5");
-                Debug.WriteLine(ex);
                 result.Text ="1";
+                Console.WriteLine(ex);
+                
             }
             
             
